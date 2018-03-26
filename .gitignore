@@ -6,8 +6,6 @@
 
 # Ignore bundler config.
 /.bundle
-/.idea/baukis.iml
-/.idea/workspace.xml
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -21,5 +19,7 @@
 
 /node_modules
 /yarn-error.log
+
+.idea
 
 .byebug_history
