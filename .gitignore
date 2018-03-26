@@ -6,6 +6,8 @@
 
 # Ignore bundler config.
 /.bundle
+/.idea/baukis.iml
+/.idea/workspace.xml
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
