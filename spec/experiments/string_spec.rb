@@ -7,5 +7,12 @@ describe String do
       s << "D"
       expect(s.size).to eq(4)
     end
+    it ' Do not add nill' do
+      pending('調査中')
+      s = "ABC"
+      # s << nill
+      # expect(s.size).to eq(4)
+      expect{ s << nill }.to raise_error(TypeError)
+    end
   end
 end
