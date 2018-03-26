@@ -21,5 +21,12 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: baukis_production
+  username: baukis
+  password: password
+#  password: <%= ENV['BAUKIS_DATABASE_PASSWORD'] %>
+
+
