@@ -6,6 +6,7 @@ Bundler.require(*Rails.groups)
 
 module Baukis
   class Application < Rails::Application
+
     # タイムゾーンを東京に設定
     config.time_zone = 'Tokyo'
     # ロケールファイルのロードパスを設定（デフォルトロケールを「日本語」に設定）
