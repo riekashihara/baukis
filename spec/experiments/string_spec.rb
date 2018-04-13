@@ -2,17 +2,22 @@ require 'spec_helper'
 
 describe String do
   describe '#<<' do
-    it 'appends a charactor' do
+    example '文字列の追加' do
       s = "ABC"
       s << "D"
       expect(s.size).to eq(4)
     end
-    it ' Do not add nill' do
-      pending('調査中')
+
+    xexample 'nilの追加' do
+      ＃pending('調査中')
       s = "ABC"
-      # s << nill
-      # expect(s.size).to eq(4)
-      expect{ s << nill }.to raise_error(TypeError)
+      s << nil
+      expect(s.size).to eq(4)
+    end
+
+    example 'nilは追加できない', :exception do
+      s = "ABC"
+      expect { s << nil }.to raise_error(TypeError)
     end
   end
 end
